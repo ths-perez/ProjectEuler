@@ -25,4 +25,4 @@ for i in range(3,ValMax):
 
 ts = time.time() - ts
 print("Time Elapsed :",ts,"s")
-print("The sum of all the multiples of 3 or 5 below ",1000, "is", tot)
+print("The sum of all the multiples of 3 or 5 below ",ValMax, "is", tot)
