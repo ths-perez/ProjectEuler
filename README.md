@@ -1,3 +1,3 @@
 "# ProjectEuler"
-archived problems in \xxx-x99
-working problems in \workingon
+
+Only problems 1-100 in python
