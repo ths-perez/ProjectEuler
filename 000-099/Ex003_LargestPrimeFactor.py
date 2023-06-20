@@ -16,11 +16,13 @@ Goal = 600851475143
 memGoal = Goal
 LastPrime = 2
 while Goal > LastPrime:
+    #starting from two
+    # then keep dividing if the rest is 0
     if(Goal%LastPrime==0):
         PrimeList.append(LastPrime)
         Goal/=LastPrime
     else:
-        #starting from two then increase and divide
+    # else, increase number by one
         LastPrime+=1
 PrimeList.append(LastPrime)
 
