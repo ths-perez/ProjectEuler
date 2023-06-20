@@ -16,11 +16,10 @@ yMax = 999
 yMin = 100
 xMax = 999
 xMin = 100
-PalFound = 0
 
-resx=0
-resy=0
-#to string
+PalFound = 0 #mem
+resx=0 #mem
+resy=0 #mem
 
 for y in range(yMax, yMin ,-1):
     for x in range(xMax,xMin,-1):
@@ -30,6 +29,7 @@ for y in range(yMax, yMin ,-1):
             # if temp is lower, no need to stay in x loop
             break 
         elif (Tools.IsPalNum(res)):
+            #res is bigger than stored pal and is pal -> store it
             PalFound = res
             resx=x
             resy=y
