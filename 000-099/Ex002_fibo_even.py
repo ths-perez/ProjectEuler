@@ -12,20 +12,18 @@ import time
 print("Starting Process")
 ts = time.time()
 
-LastVal = 0 #n-2
-ActVal = 1 # n-1
-ValMax = 4000000 # maximumu value
-tot = 0
+n_minus2 = 0 # n-2
+n_minus1 = 1 # n-1
+n = 0
 sol= 0
-while ActVal < ValMax:
-    tot = ActVal + LastVal
-    if (tot%2==0):
-        sol += tot    
-    LastVal = ActVal
-    ActVal = tot
-    print(ActVal)
-
+ValMax = 4000000 # maximum value
+while n < ValMax:
+    n = n_minus1 + n_minus2
+    if (n%2==0):
+        sol += n    
+    n_minus2 = n_minus1
+    n_minus1 = n
 
 ts = time.time() - ts
 print("Time Elapsed :",ts,"s")
-print("The sum of the even-valued terms under 4 millions ",1000, "is", sol)
+print("The sum of the even-valued terms in the fib seq under 4 millions is", sol)
