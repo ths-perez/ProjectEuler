@@ -29,3 +29,19 @@ def GetPrimeList(n):
         if prime[p]:
             PrimeList.append(2*p+1)
     return PrimeList
+
+
+from sympy import proper_divisors
+#fastest with sympy algo
+def GetDivisor(n):
+    return proper_divisors(n)
+
+
+#NOT OPTIMIZED RETURN LIST OF [1,1+2,1+2+3,1+2+3+4,--- n+k]
+def GetTriangleNumber(n):
+    l = []
+    last = 0
+    for i in range(1,n):
+        l.append(i+last)
+        last = i + last
+    return l

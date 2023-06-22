@@ -21,7 +21,7 @@ What is the value of the first triangle number to have over five hundred divisor
 
 """
 import time;
-from sympy import proper_divisors
+from ToolBox import GetDivisor
 ts = time.time()
 
 t = 1
@@ -29,7 +29,7 @@ i = 1
 while True:
     i+=1 #iterate
     t+=i #increment
-    if (len(proper_divisors(t)) >500):
+    if (len(GetDivisor(t)) >500):
         break
 
 ts = time.time() - ts
