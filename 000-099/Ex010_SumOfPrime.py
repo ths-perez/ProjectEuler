@@ -7,14 +7,14 @@ Find the sum of all the primes below two million.
 
 """
 import time
-import Tools
+import ToolBox
 
 print("Starting Process")
 ts = time.time()
 
 iMax = 2_000_000
 
-print("Sum is :",sum(Tools.GetPrimeList(iMax)))
+print("Sum is :",sum(ToolBox.GetPrimeList(iMax)))
 
 ts = time.time() - ts
 print("Time Elapsed :",ts,"s")
