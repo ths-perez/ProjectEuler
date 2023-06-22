@@ -8,7 +8,7 @@ palindrome made from the product of two 2-digit numbers is
 Find the largest palindrome made from the product of two 3-digit numbers.
 """
 import time
-import Tools
+import ToolBox
 print("Starting Process")
 ts = time.time()
 
@@ -28,7 +28,7 @@ for y in range(yMax, yMin ,-1):
         if PalFound > res:
             # if temp is lower, no need to stay in x loop
             break 
-        elif (Tools.IsPalNum(res)):
+        elif (ToolBox.IsPalNum(res)):
             #res is bigger than stored pal and is pal -> store it
             PalFound = res
             resx=x

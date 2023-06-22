@@ -1,10 +1,10 @@
 """DEFINITION
-https://projecteuler.net/problem=8
-The four adjacent digits in the 1000-digit number that have the 
-greatest product are 9 x 9 x 8 x 9 =5832.
+https://projecteuler.net/problem=10
+The sum of the primes below 10 is 
+2 + 3 + 5 + 7 = 17
 
-Find the thirteen adjacent digits in the 1000-digit number that 
-have the greatest product. What is the value of this product?
+Find the sum of all the primes below two million.
+
 """
 import time
 import Tools
@@ -18,5 +18,3 @@ print("Sum is :",sum(Tools.GetPrimeList(iMax)))
 
 ts = time.time() - ts
 print("Time Elapsed :",ts,"s")
-
-print(Tools.GetPrimeList(35))
