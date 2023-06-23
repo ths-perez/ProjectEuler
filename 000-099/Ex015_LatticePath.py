@@ -8,13 +8,13 @@ to the right and down, there are exactly 6 routes to the bottom right corner.
 How many such routes are there through a 20x20 grid?
 """
 import time;
+ts = time.time()
 
 GridDimension = 20
 
 BufferList = [1]
 List = [1]
 
-ts = time.time()
 Sol = 0
 for i in range(GridDimension):
 
