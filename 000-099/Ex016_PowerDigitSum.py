@@ -1,11 +1,10 @@
 """DEFINITION
-https://projecteuler.net/problem=15
+https://projecteuler.net/problem=16
 
-Starting in the top left corner of a 2x2 grid, and only being able to move 
-to the right and down, there are exactly 6 routes to the bottom right corner.
+2**15 = 32768  and the sum of its digits is 26.
 
-
-How many such routes are there through a 20x20 grid?
+What is the sum of the digits of the number 2**1000
+?
 """
 import time;
 ts = time.time()
@@ -23,6 +22,5 @@ p = sum(l)
 ts = time.time() - ts
 
 print("Sol :", p)
-
 print("Time Elapsed :",ts,"s")
 
