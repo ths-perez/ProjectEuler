@@ -24,8 +24,10 @@ import time;
 START = 1
 END = 1000
 l_unit = [3,3,5,4,4,3,5,5,4,3,6,6,8,8,7,7,9,8,8]
-l_dec = [6,6,5,5,5,7,6,6]
-l_hund = 7
+#one two three four five six seven eight nine ....
+l_dec = [6,6,5,5,5,7,6,6] 
+#twenty thirty forty, ...
+l_hund = 7 #hundred
 l_t = 8
 tot = 0
 ts = time.time()
